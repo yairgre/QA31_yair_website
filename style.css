@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif; /* Changed font for a cleaner look */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f8f8; /* Light background for softer feel */
+    color: #333; /* Darker text for readability */
+}
+
+header {
+    background: linear-gradient(135deg, #4a90e2, #6377e0); /* Gradient header */
+    color: white;
+    text-align: center;
+    padding: 2rem 0; /* Increased padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem; /* Added margin */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1.5rem; /* Increased margin */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500; /* Slightly bolder font */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #cce0ff; /* Lighter color on hover */
+}
+
+main {
+    padding: 3rem; /* Increased padding */
+}
+
+section {
+    margin-bottom: 3rem; /* Increased margin */
+    background-color: white; /* White sections for contrast */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.75rem; /* Increased padding */
+    color: #4a90e2; /* Accent color */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    width: 30%;
+    margin-bottom: 1.5rem; /* Increased margin */
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+}
+
+.profile-pic {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 1.5rem auto; /* Increased margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover{
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1.5rem 0; /* Increased padding */
+    border-top: 1px solid #ddd;
+    color: #777; /* Lighter footer text */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 48%;
+    }
+    nav ul li {
+        display: block;
+        margin: 0.75rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+    }
+}
+
